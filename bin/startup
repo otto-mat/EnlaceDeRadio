@@ -1,0 +1,6 @@
+#!/bin/sh
+
+mplayer -playlist http://195.154.217.185:9698/listen.pls -loop 0
+
+
+
