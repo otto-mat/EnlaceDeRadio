@@ -1,6 +1,9 @@
 #!/bin/sh
 
-mplayer -playlist http://195.154.217.185:9698/listen.pls -loop 0
-
-
-
+#!/bin/sh
+ret=0
+while [[ $ret -ne ## ]]; do
+    mplayer -playlist http://IP:PUERTO/listen.pls
+    ret=$?
+    do sleep 1
+done
