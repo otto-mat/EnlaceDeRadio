@@ -1,6 +1,6 @@
 Enlace de radio por Streeming
 
-Realizammos este enlace ante un problema concreto que se le presento a unas radios comunitarias de Argentina. Resulta 
+Realizammos este enlace ante un problema concreto que se le presento a unas radios comunitarias/libres de Argentina. Resulta 
 que por distintas razones el estudio de operación y grabación se encuentra alejado del lugar donde está el Transmisor de FM y 
 por ende desde donde transmite la radio.
 
@@ -8,3 +8,46 @@ Este problema siempre existió en las radios, se resolvía con un enlace para FM
 trasmisora. Estos aparato no son muy economicos, tampoco imposibles de pagar, salen 900 dolares mas o menos, pero esta solucion busca
 solucionarlo con cualquier computadora vieja que seguro podras conceguir. 
 
+Como dijimos antes, para el enlace necesitas una compu cualquiera e internet en la dos lugares para hacer el enlace.
+
+Tendaás que instalar el sistema operativo Linux sin entorno gráfico para que no pierda recursos en el entorno, total va a quedar en un estante la compu.
+Te recomendamos que instales Debian 8 , pero puedes usar el que desees.
+De esta manera tendremos un server, con menos recursos tecnicos, pero en sintesis es eso. ASi  que empezaremos a nombrar
+esta maquina como Server, incluso para que no nos confundamos con otra maquina de las que usamos en la radio.
+##  link para descargar imagen
+## link de como instalar debian, txt y video
+
+Ya con el Sistema Operativo (OS), instalaremos un par de programas que vamos a necesitar y lo haremos de la siguiente manera.
+
+Para poder acceder remotamenre instalaremos el programa OpenSSH
+
+$ sudo apt-get instal openssh-server   (revisar esto, lo estoy haciendo de memoria)
+
+-Ya podrías entrar al server por la LAN. Primero escribiendo $ sudo fconfig, para saber el ip del server y despues 
+desde tu computadora o la que tengas a mano escribiendo :
+
+$ sudo ssh usuario@ip-server 
+
+En el caso que usen windows van a tener que descargar el programa putty  
+(link de descarga - http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+
+Les va a resultar mas comodo para poder ir biendo en la compu y buscar en la web en caso de que lo necesiten.
+
+La idea de esta instalación es que el server tome el streem que realizarán desde el estudio y el trasmisor emita el audio.
+Lo pensamos para que sea 100% autonomo y que en caso de que se corte la luz o se caiga la conexion de internet de cualquera
+de los dos puntos, al reiniciar el servicio caido vuelva a salir la radio al aire sin tener que hacer nada en el server.
+
+Para lograr esto realizaremos un  Demonio (link a pag que explique que es un demonio), que basicamente lo que hace es que 
+tengamos un servicio en el server, que al iniciar este comience solo 
+
+
+
+
+
+
+
+
+
+
+
+ 
