@@ -41,7 +41,16 @@ Para lograr esto realizaremos un  Demonio (link a pag que explique que es un dem
 tengamos un servicio en el server, que al iniciar este comience solo 
 
 
+falta   
+conf den la bios que prenda sola cuando vuelva la luz
+dns dnimaico con free.dns y sonf el router
+agregar los 3 archivos
+darle permisos
+agregar al init.d
+No se si se me escapa algo
 
+al final pondria que en caso de no tener buen servicio de internet se recomuenda un server ice cast en la radio, link 
+sarava que tiene un buen tuto de eso.
 
 
 
